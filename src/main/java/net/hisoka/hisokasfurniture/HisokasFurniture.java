@@ -2,6 +2,8 @@ package net.hisoka.hisokasfurniture;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hisoka.hisokasfurniture.item.ModItems;
+import net.hisoka.hisokasfurniture.item.ModItemsGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class HisokasFurniture implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemsGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
