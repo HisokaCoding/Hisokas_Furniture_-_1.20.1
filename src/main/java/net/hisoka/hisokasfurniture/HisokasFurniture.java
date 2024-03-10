@@ -2,6 +2,7 @@ package net.hisoka.hisokasfurniture;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.hisoka.hisokasfurniture.item.ModItems;
 import net.hisoka.hisokasfurniture.item.ModItemsGroups;
 import org.slf4j.Logger;
@@ -15,5 +16,7 @@ public class HisokasFurniture implements ModInitializer {
 	public void onInitialize() {
 		ModItemsGroups.registerItemGroups();
 		ModItems.registerModItems();
+
+		FuelRegistry.INSTANCE.add(ModItems.OAK_PLANK,25);
 	}
 }
