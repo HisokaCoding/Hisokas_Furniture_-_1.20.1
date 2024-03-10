@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hisokasfurniture",
+	"version": "${version}",
+	"name": "Hisoka'sFurniture",
+	"description": "Adding Hisoka's furniture to your game :D",
+	"authors": [
+		"Hisoka"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hisokasfurniture/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hisoka.hisokasfurniture.HisokasFurniture"
+		],
+		"client": [
+			"net.hisoka.hisokasfurniture.HisokasFurnitureClient"
+		],
+		"fabric-datagen": [
+			"net.hisoka.hisokasfurniture.HisokasFurnitureDataGenerator"
+		]
+	},
+	"mixins": [
+		"hisokasfurniture.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
