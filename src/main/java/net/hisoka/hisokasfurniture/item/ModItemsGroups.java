@@ -16,6 +16,7 @@ public class ModItemsGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.oak_plank"))
                     .icon(() -> new ItemStack(ModItems.OAK_PLANK)).entries((displayContext, entries) -> {
                         entries.add(ModItems.OAK_PLANK);
+                        entries.add(ModItems.OAK_CUPBOARD);
                     }).build());
 
     public static void registerItemGroups() {

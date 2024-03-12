@@ -3,10 +3,13 @@ package net.hisoka.hisokasfurniture;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.hisoka.hisokasfurniture.block.ModBlocks;
+import net.hisoka.hisokasfurniture.block.entity.ModBlocksEntities;
 import net.hisoka.hisokasfurniture.item.ModItems;
 import net.hisoka.hisokasfurniture.item.ModItemsGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib.GeckoLib;
 
 public class HisokasFurniture implements ModInitializer {
 	public static final String MOD_ID = "hisokasfurniture";
@@ -14,8 +17,13 @@ public class HisokasFurniture implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		GeckoLib.initialize();
+
 		ModItemsGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlocksEntities.registerAllBlockEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.OAK_PLANK,25);
 	}

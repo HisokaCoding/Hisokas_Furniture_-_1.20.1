@@ -1,5 +1,7 @@
 {
   "item.hisokasfurniture.oak_plank": "Oak Plank",
 
-  "itemgroup.oak_plank": "Furniture"
+  "itemgroup.oak_plank": "Furniture",
+
+  "block.hisokasfurniture.oak_cupboard": "Oak Cupboard"
 }
