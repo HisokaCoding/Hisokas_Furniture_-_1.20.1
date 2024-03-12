@@ -1,6 +1,9 @@
 {
   "credit": "Made with Blockbench",
   "parent": "builtin/entity",
+  "textures": {
+    "particle": "minecraft:block/oak_planks"
+  },
   "texture_size": [
     64,
     64

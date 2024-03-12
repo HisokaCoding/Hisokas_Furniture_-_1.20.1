@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"oac_cupboard_animation.model.new": {
+		"oak_cupboard": {
 			"animation_length": 1,
 			"bones": {
 				"door": {

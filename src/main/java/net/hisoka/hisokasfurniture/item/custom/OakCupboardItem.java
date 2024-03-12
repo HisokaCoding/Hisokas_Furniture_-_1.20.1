@@ -48,7 +48,7 @@ public class OakCupboardItem extends BlockItem implements GeoItem {
     }
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("oak_cupboard.animation.json", Animation.LoopType.PLAY_ONCE));
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("oak_cupboard", Animation.LoopType.PLAY_ONCE));
         return PlayState.CONTINUE;
     }
 

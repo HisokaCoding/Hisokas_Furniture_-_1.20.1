@@ -24,7 +24,7 @@ public class OakCupboardEntity extends BlockEntity implements GeoBlockEntity {
     }
 
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("oak_cupboard.animation.json", Animation.LoopType.LOOP));
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("oak_cupboard", Animation.LoopType.PLAY_ONCE));
         return PlayState.CONTINUE;
     }
 
