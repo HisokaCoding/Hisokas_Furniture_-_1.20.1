@@ -2,6 +2,7 @@ package net.hisoka.hisokasfurniture.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.hisoka.hisokasfurniture.block.ModBlocks;
 import net.hisoka.hisokasfurniture.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;

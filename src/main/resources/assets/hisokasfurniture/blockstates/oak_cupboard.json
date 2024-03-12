@@ -1,5 +1,19 @@
 {
   "variants": {
-    "": { "model": "hisokasfurniture:block/oak_cupboard" }
+    "facing=north": {
+      "model": "hisokasfurniture:block/oak_cupboard"
+    },
+    "facing=east": {
+      "model": "hisokasfurniture:block/oak_cupboard",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hisokasfurniture:block/oak_cupboard",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hisokasfurniture:block/oak_cupboard",
+      "y": 270
+    }
   }
 }
